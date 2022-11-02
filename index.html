@@ -132,6 +132,18 @@
 
         </div>
       </section>
+      <section class="products">
+        <div class="container">
+          <h2><span>Device предлагает следующие товары и услуги</span><span>Товары и услуги<br />
+            Smart Device</span></h2>
+          <ul class="products__list products-list">
+            <li><a href="http://">Производство<br /> печатных плат</a></li>
+            <li><a href="http://">Монтаж печатных<br /> плат</a></li>
+            <li><a href="http://">Комплектующие<br /> для светотехники</a></li>
+          </ul>
+
+        </div>
+      </section>
       <section class="feedback">
         <div class="feedback__container container">
           <div class="feedback__wrapper">
@@ -141,14 +153,14 @@
             </p>
             <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post" id="question-form">
               <p>
-                <input type="text" placeholder="Имя" name="name">
-                <input type="tel" placeholder="Телефон" name="phone">
+                <input type="text" placeholder="Имя" name="name" required>
+                <input type="tel" placeholder="Телефон" name="phone" required>
               </p>
               <textarea name="question" id="question-form" cols="30" placeholder="Ваш вопрос"></textarea>
               <p>
                 <button class="button button--form" type="submit">Задать вопрос</button>
                 <label>
-                  <input type="checkbox" name="persondata" id="persondata" checked>
+                  <input type="checkbox" name="persondata" id="persondata" required checked>
                   <span></span>
                   <span>Я согласен на обработку<br /> персональных данных</span>
                 </label>
@@ -172,7 +184,7 @@
             </p>
           </div>
           <div class="footer__social-wrapper social">
-            <ul class="social__list">
+            <ul class="social__list social-list">
               <li>
                 <a href="">
                   <svg width="30" height="30">
@@ -200,7 +212,7 @@
         <div class="footer__accordion-wrapper accordion accordion--nav">
           <button class="accordion__button" type="button">Разделы сайта</button>
           <div class="accordion__panel">
-            <ul class="accordion__list">
+            <ul class="accordion__list accordion-list">
               <li><a href="http://">О Компании</a></li>
               <li><a href="http://">Продукты</a></li>
               <li><a href="http://">Производство печатных<br /> плат</a></li>
@@ -214,7 +226,7 @@
         <div class="footer__accordion-wrapper accordion accordion--contacts">
           <button class="accordion__button" type="button">Наш офис</button>
           <div class="accordion__panel">
-            <ul class="accordion__list">
+            <ul class="accordion__list accordion-list">
               <li>г. Мытищи, Олимпийский проспект,<br /> д.10</li>
               <li><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
               <li><a href="tel:+79253895829">+7 (925) 389-58-29</a></li>
