@@ -885,6 +885,10 @@ button,
   vertical-align: middle;
 }
 
+.index-header__constacts-wrapper span {
+  word-break: keep-all;
+}
+
 .index-header__button {
   margin-right: 60px;
 }
@@ -980,7 +984,7 @@ button,
   padding-top: 185px;
   padding-bottom: 285px;
   position: relative;
-  background-image: url("../img/bg-big.png");
+  background-image: -webkit-image-set(url("../img/bg-big.webp") 1x, url("../img/bg-big.png") 1x);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1361,7 +1365,7 @@ button,
   width: 100%;
   max-width: 350px;
   min-height: 650px;
-  background-image: url("../img/product-1.png");
+  background-image: -webkit-image-set(url("../img/product-1.webp") 1x, url("../img/product-1.png") 1x);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1369,11 +1373,11 @@ button,
 }
 
 .products-list li:nth-of-type(2) {
-  background-image: url("../img/product-2.png");
+  background-image: -webkit-image-set(url("../img/product-2.webp") 1x, url("../img/product-2.png") 1x);
 }
 
 .products-list li:last-of-type {
-  background-image: url("../img/product-3.png");
+  background-image: -webkit-image-set(url("../img/product-3.webp") 1x, url("../img/product-3.png") 1x);
 }
 
 .products-list a {
@@ -1449,6 +1453,7 @@ button,
 }
 
 .accordion-list a {
+  white-space: nowrap;
   display: block;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
@@ -1703,15 +1708,15 @@ button,
   .products-list li {
     max-width: 670px;
     min-height: 250px;
-    background-image: url("../img/tablet-product-1.png");
+    background-image: -webkit-image-set(url("../img/tablet-product-1.webp") 1x, url("../img/tablet-product-1.png") 1x);
   }
 
   .products-list li:nth-of-type(2) {
-    background-image: url("../img/tablet-product-2.png");
+    background-image: -webkit-image-set(url("../img/tablet-product-2.webp") 1x, url("../img/tablet-product-2.png") 1x);
   }
 
   .products-list li:last-of-type {
-    background-image: url("../img/tablet-product-3.png");
+    background-image: -webkit-image-set(url("../img/tablet-product-3.webp") 1x, url("../img/tablet-product-3.png") 1x);
   }
 
   .accordion-list {
@@ -1991,15 +1996,15 @@ button,
 
   .products-list li {
     max-width: 670px;
-    background-image: url("../img/mobile-product-1.png");
+    background-image: -webkit-image-set(url("../img/mobile-product-1.webp") 1x, url("../img/mobile-product-1.png") 1x);
   }
 
   .products-list li:nth-of-type(2) {
-    background-image: url("../img/mobile-product-2.png");
+    background-image: -webkit-image-set(url("../img/mobile-product-2.webp") 1x, url("../img/mobile-product-2.png") 1x);
   }
 
   .products-list li:last-of-type {
-    background-image: url("../img/mobile-product-3.png");
+    background-image: -webkit-image-set(url("../img/mobile-product-3.webp") 1x, url("../img/mobile-product-3.png") 1x);
   }
 
   .products-list a::after {
