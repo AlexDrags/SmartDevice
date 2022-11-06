@@ -828,6 +828,8 @@ button,
 
 .index-header {
   position: sticky;
+  top: 0;
+  z-index: 3;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #041827), color-stop(150%, rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 90%, rgba(4, 24, 39, 0) 150%);
   background: linear-gradient(180deg, #041827 90%, rgba(4, 24, 39, 0) 150%);
@@ -985,6 +987,7 @@ button,
   padding-bottom: 285px;
   position: relative;
   background-image: -webkit-image-set(url("../img/bg-big.webp") 1x, url("../img/bg-big.png") 1x);
+  background-image: image-set(url("../img/bg-big.webp") 1x, url("../img/bg-big.png") 1x);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1149,7 +1152,7 @@ button,
 .feedback {
   width: 100%;
   height: 600px;
-  background: #00B3FF;
+  background: #00b2ff;
   position: relative;
   color: #ffffff;
   min-height: 840px;
@@ -1366,6 +1369,7 @@ button,
   max-width: 350px;
   min-height: 650px;
   background-image: -webkit-image-set(url("../img/product-1.webp") 1x, url("../img/product-1.png") 1x);
+  background-image: image-set(url("../img/product-1.webp") 1x, url("../img/product-1.png") 1x);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1374,10 +1378,12 @@ button,
 
 .products-list li:nth-of-type(2) {
   background-image: -webkit-image-set(url("../img/product-2.webp") 1x, url("../img/product-2.png") 1x);
+  background-image: image-set(url("../img/product-2.webp") 1x, url("../img/product-2.png") 1x);
 }
 
 .products-list li:last-of-type {
   background-image: -webkit-image-set(url("../img/product-3.webp") 1x, url("../img/product-3.png") 1x);
+  background-image: image-set(url("../img/product-3.webp") 1x, url("../img/product-3.png") 1x);
 }
 
 .products-list a {
@@ -1463,7 +1469,7 @@ button,
 }
 
 .accordion-list a.focus-visible:focus {
-  background-color: #ccc;
+  background-color: #cccccc;
   color: #041827;
 }
 
@@ -1709,14 +1715,17 @@ button,
     max-width: 670px;
     min-height: 250px;
     background-image: -webkit-image-set(url("../img/tablet-product-1.webp") 1x, url("../img/tablet-product-1.png") 1x);
+    background-image: image-set(url("../img/tablet-product-1.webp") 1x, url("../img/tablet-product-1.png") 1x);
   }
 
   .products-list li:nth-of-type(2) {
     background-image: -webkit-image-set(url("../img/tablet-product-2.webp") 1x, url("../img/tablet-product-2.png") 1x);
+    background-image: image-set(url("../img/tablet-product-2.webp") 1x, url("../img/tablet-product-2.png") 1x);
   }
 
   .products-list li:last-of-type {
     background-image: -webkit-image-set(url("../img/tablet-product-3.webp") 1x, url("../img/tablet-product-3.png") 1x);
+    background-image: image-set(url("../img/tablet-product-3.webp") 1x, url("../img/tablet-product-3.png") 1x);
   }
 
   .accordion-list {
@@ -1882,11 +1891,11 @@ button,
 
   .accordion__button .active,
   .accordion__button:hover {
-    background-color: #ccc;
+    background-color: #cccccc;
   }
 
   .accordion__button::after {
-    content: url(../img/svg/plus.svg);
+    content: url("../img/svg/plus.svg");
     font-size: 13px;
     color: #f8fdff;
     float: right;
@@ -1894,7 +1903,7 @@ button,
   }
 
   .accordion__button.active::after {
-    content: url(../img/svg/minus.svg);
+    content: url("../img/svg/minus.svg");
     font-size: 13px;
     color: #f8fdff;
     float: right;
@@ -1906,6 +1915,10 @@ button,
     background-color: #041827;
     display: none;
     overflow: hidden;
+  }
+
+  .accordion__panel:last-of-type {
+    padding-bottom: 35px;
   }
 
   .accordion--nav {
@@ -2004,14 +2017,17 @@ button,
   .products-list li {
     max-width: 670px;
     background-image: -webkit-image-set(url("../img/mobile-product-1.webp") 1x, url("../img/mobile-product-1.png") 1x);
+    background-image: image-set(url("../img/mobile-product-1.webp") 1x, url("../img/mobile-product-1.png") 1x);
   }
 
   .products-list li:nth-of-type(2) {
     background-image: -webkit-image-set(url("../img/mobile-product-2.webp") 1x, url("../img/mobile-product-2.png") 1x);
+    background-image: image-set(url("../img/mobile-product-2.webp") 1x, url("../img/mobile-product-2.png") 1x);
   }
 
   .products-list li:last-of-type {
     background-image: -webkit-image-set(url("../img/mobile-product-3.webp") 1x, url("../img/mobile-product-3.png") 1x);
+    background-image: image-set(url("../img/mobile-product-3.webp") 1x, url("../img/mobile-product-3.png") 1x);
   }
 
   .products-list a::after {
@@ -2083,7 +2099,7 @@ button,
   }
 
   .accordion-list a:hover:not(.focus-visible) {
-    background-color: #ccc;
+    background-color: #cccccc;
     color: #041827;
   }
 }
