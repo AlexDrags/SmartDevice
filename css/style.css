@@ -892,8 +892,32 @@ button,
   word-break: keep-all;
 }
 
-.index-header__button {
+.index-header button {
   margin-right: 60px;
+  cursor: pointer;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  min-width: 160px;
+  min-height: 40px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 15px;
+  border: 1px solid #f2f5f6;
+  border-radius: 3px;
+  background: transparent;
+  color: #f2f5f6;
+  text-transform: uppercase;
+}
+
+.index-header button.focus-visible:focus {
+  background: #ffffff;
+  color: #000000;
 }
 
 .logo {
@@ -929,9 +953,10 @@ button,
   margin-top: 0;
 }
 
-.button {
+button {
   cursor: pointer;
   font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -942,41 +967,17 @@ button,
   -ms-grid-row-align: center;
   align-self: center;
   display: inline-block;
+  vertical-align: middle;
   padding: 10px 15px;
   border: 1px solid #f2f5f6;
   border-radius: 3px;
   background: transparent;
   color: #f2f5f6;
-  text-transform: uppercase;
 }
 
-.button.focus-visible:focus {
+button.focus-visible:focus {
   background: #ffffff;
   color: #000000;
-}
-
-.button--intro {
-  font-size: 18px;
-  line-height: 21px;
-  background: #00b2ff;
-  border: none;
-  padding: 15px 25px;
-  min-width: 410px;
-  min-height: 55px;
-  display: block;
-}
-
-.button--form {
-  display: block;
-  min-width: 265px;
-  background-color: #000000;
-  border: none;
-}
-
-.button--about {
-  min-width: 180px;
-  color: #00b2ff;
-  border-color: #00b2ff;
 }
 
 .index-main {
@@ -997,7 +998,6 @@ button,
 
 .intro h1 {
   margin-top: 0;
-  margin-bottom: 40px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 80px;
@@ -1016,6 +1016,17 @@ button,
 
 .intro__wrapper {
   margin-left: 125px;
+}
+
+.intro button {
+  font-size: 18px;
+  line-height: 21px;
+  background: #00b2ff;
+  border: none;
+  padding: 15px 25px;
+  min-width: 410px;
+  min-height: 55px;
+  display: block;
 }
 
 .features {
@@ -1110,6 +1121,7 @@ button,
 
 .social__list a {
   display: inline-block;
+  vertical-align: middle;
   padding: 5px;
   padding-bottom: 0;
 }
@@ -1122,7 +1134,7 @@ button,
   fill: rgba(248, 253, 255, 0.6549019608);
 }
 
-.accordion__button {
+.accordion button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -1171,7 +1183,7 @@ button,
   clip-path: polygon(0% 0%, 0% 100%, 100% 0);
   background: #026593;
   width: 51%;
-  height: 100% px;
+  height: 100%;
   left: 0;
   top: 0;
 }
@@ -1299,6 +1311,13 @@ button,
   margin-bottom: 35px;
 }
 
+.form button {
+  display: block;
+  min-width: 265px;
+  background-color: #000000;
+  border: none;
+}
+
 .about {
   padding-top: 120px;
   padding-bottom: 100px;
@@ -1340,6 +1359,12 @@ button,
   display: none;
 }
 
+.about button {
+  min-width: 180px;
+  color: #00b2ff;
+  border-color: #00b2ff;
+}
+
 .products {
   background: #041827;
   padding-top: 62px;
@@ -1377,30 +1402,14 @@ button,
 .products-list li {
   width: 100%;
   max-width: 350px;
-  min-height: 650px;
-  background-image: -webkit-image-set(url("../img/product-1.webp") 1x, url("../img/product-1.png") 1x);
-  background-image: image-set(url("../img/product-1.webp") 1x, url("../img/product-1.png") 1x);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  max-height: 650px;
   position: relative;
 }
 
-.products-list li:nth-of-type(2) {
-  background-image: -webkit-image-set(url("../img/product-2.webp") 1x, url("../img/product-2.png") 1x);
-  background-image: image-set(url("../img/product-2.webp") 1x, url("../img/product-2.png") 1x);
-}
-
-.products-list li:last-of-type {
-  background-image: -webkit-image-set(url("../img/product-3.webp") 1x, url("../img/product-3.png") 1x);
-  background-image: image-set(url("../img/product-3.webp") 1x, url("../img/product-3.png") 1x);
-}
-
 .products-list a {
+  position: relative;
   width: 100%;
   height: 100%;
-  padding-top: 50px;
-  padding-left: 40px;
   display: block;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -1435,6 +1444,19 @@ button,
   box-shadow: inset 5px 5px 10px 5px #000000;
 }
 
+.products-list h3 {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  z-index: 4;
+}
+
+.products-list img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 100%;
+}
+
 .accordion-list {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1460,7 +1482,7 @@ button,
   margin-bottom: 10px;
 }
 
-.accordion-list li:nth-child(4) {
+.accordion-list li:nth-child(4n) {
   margin-bottom: 0;
 }
 
@@ -1623,20 +1645,8 @@ button,
     display: none;
   }
 
-  .button {
+  .index-header button {
     display: none;
-  }
-
-  .button--intro {
-    display: block;
-  }
-
-  .button--form {
-    display: block;
-  }
-
-  .button--about {
-    display: block;
   }
 
   .intro {
@@ -1724,18 +1734,6 @@ button,
   .products-list li {
     max-width: 670px;
     min-height: 250px;
-    background-image: -webkit-image-set(url("../img/tablet-product-1.webp") 1x, url("../img/tablet-product-1.png") 1x);
-    background-image: image-set(url("../img/tablet-product-1.webp") 1x, url("../img/tablet-product-1.png") 1x);
-  }
-
-  .products-list li:nth-of-type(2) {
-    background-image: -webkit-image-set(url("../img/tablet-product-2.webp") 1x, url("../img/tablet-product-2.png") 1x);
-    background-image: image-set(url("../img/tablet-product-2.webp") 1x, url("../img/tablet-product-2.png") 1x);
-  }
-
-  .products-list li:last-of-type {
-    background-image: -webkit-image-set(url("../img/tablet-product-3.webp") 1x, url("../img/tablet-product-3.png") 1x);
-    background-image: image-set(url("../img/tablet-product-3.webp") 1x, url("../img/tablet-product-3.png") 1x);
   }
 
   .accordion-list {
@@ -1786,25 +1784,6 @@ button,
     margin-right: 10px;
   }
 
-  .button--intro {
-    min-width: 270px;
-    min-height: 40px;
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-  .button--intro span {
-    display: none;
-  }
-
-  .button--form {
-    min-height: 45px;
-  }
-
-  .button--about {
-    min-width: 160px;
-  }
-
   .intro {
     padding-top: 80px;
     padding-bottom: 190px;
@@ -1828,6 +1807,17 @@ button,
 
   .intro__button {
     margin-left: 0;
+  }
+
+  .intro button {
+    min-width: 270px;
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .intro button span {
+    display: none;
   }
 
   .features-list {
@@ -1887,7 +1877,7 @@ button,
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 
-  .accordion__button {
+  .accordion button {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
@@ -1899,12 +1889,12 @@ button,
     /* Добавить цвет фона для кнопки, если она нажата (добавить .активный класс с JS), а при наведении на него курсора мыши (наведите курсор) */
   }
 
-  .accordion__button .active,
-  .accordion__button:hover {
+  .accordion button .active,
+  .accordion button:hover {
     background-color: #cccccc;
   }
 
-  .accordion__button::after {
+  .accordion button::after {
     content: url("../img/svg/plus.svg");
     font-size: 13px;
     color: #f8fdff;
@@ -1912,7 +1902,7 @@ button,
     margin-left: 5px;
   }
 
-  .accordion__button.active::after {
+  .accordion button.active::after {
     content: url("../img/svg/minus.svg");
     font-size: 13px;
     color: #f8fdff;
@@ -1986,6 +1976,10 @@ button,
     min-width: 270px;
   }
 
+  .form button {
+    min-height: 45px;
+  }
+
   .about {
     font-size: 50px;
     line-height: 80px;
@@ -2005,6 +1999,10 @@ button,
     line-height: 19px;
   }
 
+  .about button {
+    min-width: 160px;
+  }
+
   .products {
     padding-top: 50px;
     padding-bottom: 86px;
@@ -2022,22 +2020,11 @@ button,
 
   .products span:last-of-type {
     display: inline-block;
+    vertical-align: middle;
   }
 
   .products-list li {
     max-width: 670px;
-    background-image: -webkit-image-set(url("../img/mobile-product-1.webp") 1x, url("../img/mobile-product-1.png") 1x);
-    background-image: image-set(url("../img/mobile-product-1.webp") 1x, url("../img/mobile-product-1.png") 1x);
-  }
-
-  .products-list li:nth-of-type(2) {
-    background-image: -webkit-image-set(url("../img/mobile-product-2.webp") 1x, url("../img/mobile-product-2.png") 1x);
-    background-image: image-set(url("../img/mobile-product-2.webp") 1x, url("../img/mobile-product-2.png") 1x);
-  }
-
-  .products-list li:last-of-type {
-    background-image: -webkit-image-set(url("../img/mobile-product-3.webp") 1x, url("../img/mobile-product-3.png") 1x);
-    background-image: image-set(url("../img/mobile-product-3.webp") 1x, url("../img/mobile-product-3.png") 1x);
   }
 
   .products-list a::after {
@@ -2046,10 +2033,13 @@ button,
   }
 
   .products-list a {
-    padding-top: 30px;
-    padding-left: 30px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .products-list h3 {
+    top: 30px;
+    left: 30px;
   }
 
   .accordion-list {
@@ -2076,7 +2066,12 @@ button,
     fill: #f2f5f6;
   }
 
-  .button:hover:not(.focus-visible) {
+  .index-header button:hover:not(.focus-visible) {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  button:hover:not(.focus-visible) {
     background: #ffffff;
     color: #000000;
   }
