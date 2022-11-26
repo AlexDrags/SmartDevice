@@ -1202,6 +1202,30 @@ button.focus-visible:focus {
   margin-bottom: 30px;
 }
 
+.form__label-container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.form__label-container span:first-of-type {
+  position: absolute;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 2px;
+  border: 1px solid #ffffff;
+  margin-right: 7px;
+}
+
+.form__label-container input:checked ~ span:first-of-type::after {
+  position: absolute;
+  content: url(../img/svg/accept.svg);
+  bottom: 0px;
+  right: 2px;
+}
+
 .form button {
   display: block;
   min-height: 45px;
@@ -1922,6 +1946,14 @@ button.focus-visible:focus {
     width: 98%;
   }
 
+  .form__label-container {
+    padding-left: 26px;
+  }
+
+  .form__label-container span:first-of-type {
+    top: 5px;
+  }
+
   .about {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -2244,7 +2276,7 @@ button.focus-visible:focus {
   }
 
   .form label {
-    padding-left: 5px;
+    padding-left: 30px;
   }
 
   .form [type=text],
@@ -2257,6 +2289,10 @@ button.focus-visible:focus {
     min-height: 175px;
     margin-bottom: 25px;
     padding-top: 14px;
+  }
+
+  .form__label-container span:first-of-type {
+    left: 5px;
   }
 
   .form button {
