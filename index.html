@@ -122,11 +122,11 @@
           <div class="about__wrapper">
             <h2>О компании</h2>
             <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
-              1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней. <br /><br />
+              1997 года. Выполняем срочные заказы и пилотные<br /> образцы до 10 дней. <br /><br />
               Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-              <span class="moretext-js">
-                Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог
-                (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
+              <span class="moretext-js moretext-js--first">
+                Печатные платы и комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных<br /> Дорог
+                (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ),<br /> МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
                 Производители светотехники России.<br /><br />
               </span>
               <span class="moretext-js">
@@ -213,13 +213,14 @@
                 <input type="text" placeholder="Имя" name="name" id="firstname" required>
                 <label for="phone" class="visually-hidden">Телефон</label>
                 <input type="tel" placeholder="Телефон" name="phone" id="phone" data-phone-pattern required>
+
               </p>
               <label for="textfield" class="visually-hidden">Поле для ввода сообщения</label>
               <textarea name="question" cols="30" id="textfield" placeholder="Ваш вопрос"></textarea>
               <p>
                 <button class="button button--form" type="submit">Задать вопрос</button>
                 <label class="form__label-container">
-                  <input class="visually-hidden" type="checkbox" name="persondata" required checked>
+                  <input class="visually-hidden"   tabindex="0" type="checkbox" name="persondata" required checked>
                   <span></span>
                   <span>Я согласен на обработку<br /> персональных данных</span>
                 </label>
@@ -269,13 +270,13 @@
           <!-- Класс accordion__panel--show для работы без js-класса accordion__panel--nav-js -->
           <div class="accordion__panel accordion__panel--show accordion__panel--nav-js">
             <ul class="accordion__list accordion-list">
-              <li><a href="/">О Компании</a></li>
-              <li><a href="/">Продукты</a></li>
-              <li><a href="/">Производство печатных<br /> плат</a></li>
-              <li><a href="/">Монтаж печатных плат</a></li>
-              <li><a href="/">Комплектующие</a></li>
-              <li><a href="/">Контакты</a></li>
-              <li><a href="/">Доставка</a></li>
+              <li class="accordion-list__item"><a href="/">О Компании</a></li>
+              <li class="accordion-list__item"><a href="/">Продукты</a></li>
+              <li class="accordion-list__item accordion-list__item--third"><a href="/">Производство печатных<br /> плат</a></li>
+              <li class="accordion-list__item"><a href="/">Монтаж печатных плат</a></li>
+              <li class="accordion-list__item"><a href="/">Комплектующие</a></li>
+              <li class="accordion-list__item"><a href="/">Контакты</a></li>
+              <li class="accordion-list__item"><a href="/">Доставка</a></li>
 
             </ul>
           </div>
@@ -301,8 +302,8 @@
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
-        <h3>Заказать звонок</h3>
-        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <h3>Закажите звонок</h3>
+        <p>Оставьте контакты, мы проконсультируем<br/> вас бесплатно в удобное время</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <p>
             <input type="text" placeholder="Имя" name="name" id="name" tabindex="1" required>
@@ -318,8 +319,9 @@
             </label>
           </p>
         </form>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" tabindex="6" data-close-modal>
-          <svg width="15" height="15" aria-label="Закрыть">
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" tabindex="6"
+          data-close-modal>
+          <svg width="20" height="20" aria-label="Закрыть">
             <use xlink:href="img/sprite_auto.svg#icon-close"></use>
           </svg>
         </button>
